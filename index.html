@@ -39,6 +39,8 @@
   
   x = y = 0;
 
+  // const charSprite = new Image();
+  // charSprite.src = 'spritesheet.png';
   spritesheet = new Image();
   spritesheet.src = 'spritesheet.png';
 
@@ -51,14 +53,11 @@
     if(e.key == "d") x++;
   };
 
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(spritesheet, x*tileSize, y*tileSize);
-  };
-
   setInterval (draw, 15);
   
   setupCanvas();
+
+  generateLevel();
 
 </script>
 
