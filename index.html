@@ -34,7 +34,7 @@
 <script>
   
   tileSize = 64;
-  numTiles = 9;
+  numTiles = 18;
   uiWidth = 4;
   
   x = y = 0;
@@ -58,6 +58,10 @@
   setupCanvas();
 
   generateLevel();
+
+  startingTile = randomPassableTile();
+  x = startingTile.x;
+  y = startingTile.y;
 
 </script>
 
